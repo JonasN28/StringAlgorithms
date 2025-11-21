@@ -71,22 +71,23 @@ public class StringAlgorithms {
      */
     public static String firstUniqueChar(String word) {
         // TODO: Implement this method
-        String test = "";
-        int x = 1;
-        int y = 1;
-        while( x <= word.length()){
-           test = word.substring(x - 1,x);
-           while(y <= word.length()){
-              if(test.equals(word.substring(y - 1, y))){
-                 x++;
-                 y = word.length() + 1;
-              } else if(y == word.length()){
-                 return test;
-              }
-              y++;
-           }
+     //   String test = "";
+     //   int x = 1;
+    //    int y = 1;
+      //  while( x <= word.length()){
+     //      test = word.substring(x - 1,x);
+       //   while(y <= word.length()){
+      //        if(test.equals(word.substring(y - 1, y))){
+       //          x++;
+       //          y = word.length() + 1;
+       //       } else if(y == word.length()){
+       //          return test;
+       //       }else{
+        //         y++;
+       //       }
+      //     }
            
-        }
+    //    }
                 
         return " ";
     }
@@ -118,6 +119,6 @@ public class StringAlgorithms {
 
         System.out.println("\nTesting firstUniqueChar:");
         // Example:
-        System.out.println(firstUniqueChar("swiss"));
+        //System.out.println(firstUniqueChar("swiss"));
     }
 }
